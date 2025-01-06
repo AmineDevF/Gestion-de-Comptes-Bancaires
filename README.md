@@ -70,7 +70,28 @@ Vous allez développer une petite application PHP orientée objet (OOP) qui perm
 | created_at   | TIMESTAMP    | Date de création du compte        |
 | updated_at   | TIMESTAMP    | Dernière mise à jour des données  |
 
+### Table `accounts`
+| Champ         | Type         | Description                            |
+|---------------|--------------|----------------------------------------|
+| id            | INT          | Identifiant unique du compte          |
+| user_id       | INT          | Référence vers l'utilisateur          |
+| account_type  | ENUM('courant', 'epargne') | Type de compte bancaire       |
+| balance       | DECIMAL(10,2)| Solde actuel                          |
+| created_at    | TIMESTAMP    | Date de création du compte            |
+| updated_at    | TIMESTAMP    | Dernière mise à jour                  |
+
+### Table `transactions`
+| Champ          | Type         | Description                            |
+|----------------|--------------|----------------------------------------|
+| id             | INT          | Identifiant unique de la transaction  |
+| account_id     | INT          | Référence vers le compte bancaire     |
+| transaction_type | ENUM('depot', 'retrait', 'transfert') | Type de transaction |
+| amount         | DECIMAL(10,2)| Montant de la transaction             |
+| beneficiary_account_id | INT (nullable) | Référence vers le compte bénéficiaire (si transfert) |
+| created_at     | TIMESTAMP    | Date et heure de la transaction       |
+
 ---
+
 
 ## 📂 Structure du Projet
 ```
@@ -96,9 +117,21 @@ project/
 ---
 
 ## 📅 Durée et Niveau
-- **Durée estimée** : 4 jours
+- **Durée estimée** : 5 jours
 - **Niveau** : Moyennement complexe
 
+---
+
+## 📦 Livrables
+- 📌 Lien de la planification des tâches avec Jira.
+- 📂 Lien vers le repository GitHub contenant :
+  - README.
+  - Scripts PHP fonctionnels pour toutes les fonctionnalités backend.
+  - Script SQL.
+  - ERD et UML (diagramme de cas d'utilisation).
+- 🎥 Lien de présentation.
+- 🌐 Lien d'hébergement (facultatif).
+  
 ---
 
 ## ✅ Critères d'Évaluation
