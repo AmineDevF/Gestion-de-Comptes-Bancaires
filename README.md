@@ -116,8 +116,8 @@ project/
 
 ---
 
-## 📅 Durée et Niveau
-- **Durée estimée** : 5 jours
+## 📅 Durée 
+- **Durée estimée** : 5 jours travail en binôme
 - **Niveau** : Moyennement complexe
 
 ---
