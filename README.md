@@ -128,7 +128,7 @@ project/
   - README.
   - Scripts PHP fonctionnels pour toutes les fonctionnalités backend.
   - Script SQL.
-  - ERD et UML (diagramme de cas d'utilisation).
+  - ERD et UML (diagramme de classe , diagramme de cas d'utilisation).
 - 🎥 Lien de présentation.
 - 🌐 Lien d'hébergement (facultatif).
   
